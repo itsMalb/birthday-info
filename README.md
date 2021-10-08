@@ -3,3 +3,4 @@ A simple python CLI that prints the name of the day of the week you were born on
 
 # Requirements
 # Usage
+# Example 
