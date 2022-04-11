@@ -1,41 +1,46 @@
-from datetime import * # Importing libraries. 
+# Import libraries
+from datetime import date
 
-# Today's Date.
+# Today's date
 today = date.today()
-print("Today: " +  today.strftime('%A %d, %b %Y'))
+print(f"Today: {today.strftime('%A %d, %b %Y')}")
 
-dobStr = input("What is your Date of Birth? dd/mm/yyyy ")
+# Get user input
+dob_str = input("What is your date of birth? [dd/mm/yyyy]: ")
 
-# Convert user input into a date.
-dobData = dobStr.split("/")
-dobDay = int(dobData[0])
-dobMonth = int(dobData[1])
-dobYear = int(dobData[2])
-dob = date(dobYear,dobMonth,dobDay)
+# Convert user input into a date
+dob_data = dob_str.split('/')
+dob_day = int(dob_data[0])
+dob_month = int(dob_data[1])
+dob_year = int(dob_data[2])
+dob = date(dob_year, dob_month, dob_day)
 
-# Calculate number of days lived.
-numberOfDays = (today - dob).days 
+# Calculate number of days lived
+number_of_days = (today - dob).days
 
-# Convert this into whole years to display the age.
-age = numberOfDays // 365
-print("You are " + str(age) + " years old.")
+# Convert this into whole years to display the age
+age = number_of_days // 365
+print(f"You are {age} years old.")
 
-# Retrieve the day of the week (Monday to Sunday) corresponding to the date of birth.
-day = dob.strftime("%A")
-print("You were born on a " + day + ".")
+# Retrieve the day of the week (Monday to Sunday) corresponding to the date of birth
+day = dob.strftime('%A')
+print(f"You were born on a {day}.")
 
-print("You have spent " + str(numberOfDays) + " days on Earth.")
+# Print number of days lived
+print(f"You have spent {number_of_days} days on Earth.")
 
-# Calculating the number of days until next birthday.
-thisYear = today.year
-
-nextBirthday = date(thisYear,dobMonth,dobDay)
-if today<nextBirthday:
-  gap = (nextBirthday - today).days
-  print("Your birhday is in " + str(gap) + " days.")
-elif  today == nextBirthday:
-  print("Today is your birthday! Happy Birthday!")
+# Calculate number of days until next birthday
+this_year = today.year
+next_birthday = date(this_year, dob_month, dob_day)
+if today < next_birthday:
+    days_left = (next_birthday - today).days
+    print(f"Your birhday is in {days_left} days.")
+elif today == next_birthday:
+    print("Today is your birthday! Happy Birthday!")
 else:
-  nextBirthday = date(thisYear+1,dobMonth,dobDay)
-  daysLeft = (nextBirthday - today).days
-  print("Your birthday is in " + str(daysLeft) + " days.")
+    next_birthday = date(this_year + 1, dob_month, dob_day)
+    days_left = (next_birthday - today).days
+    print(f"Your birthday is in {days_left} days.")
+
+# Wait for user input to exit
+input("Press Enter to exit.")
