@@ -33,5 +33,8 @@ Your birthday is in 204 days.
 ## Contributing
 Pull requests are welcome. Don't hesitate to make changes, I don't mind. :)
 
+## Credits
+Subtitle badges by [Shields](https://shields.io/)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
