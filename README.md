@@ -29,7 +29,7 @@ You have spent 7466 days on Earth.
 Your birthday is in 204 days.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. Don't hesitate to make changes, I don't mind. :)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
