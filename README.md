@@ -12,7 +12,7 @@ After you input your date of birth, this silly CLI prints the name of the day of
 Download the project folder as a ZIP archive from this GitHub page and unzip the contents into any folder on your Windows PC.
 
 ## Usage
-- Open the project folder and double click the shortcut named `birthday-info-main`.
+- Open the project folder and double click the shortcut named `birthday-info`.
 - Enter your date of birth in this format: dd/mm/yy
 - Click Enter and read some cool information about your birthday.
 
