@@ -2,7 +2,7 @@
 
 By [itsMalb](https://github.com/itsMalb)
 
-A silly python CLI that prints the name of the day of the week you were born in, how old you are in days, along with the number of days until your next birthday.
+After you input your date of birth, this silly CLI prints the name of the day of the week you were born in, how old you are in days, along with the number of days until your next birthday.
 
 *This project is still under development*
 
