@@ -41,3 +41,6 @@ else:
     next_birthday = date(this_year + 1, dob_month, dob_day)
     days_left = (next_birthday - today).days
     print(f"Your birthday is in {days_left} days.")
+
+# Wait for user input to exit
+input("Press Enter to exit.")
